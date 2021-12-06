@@ -43,7 +43,7 @@ function output(todo) {
             saveDate();
         });
         /*完了処理*/
-        li.addEventListener("touchend", function(event) {
+        li.addEventListener("click", function(event) {
             event.preventDefault();
             li.classList.toggle("line")
             saveDate();
