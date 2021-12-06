@@ -43,7 +43,7 @@ function output(todo) {
             saveDate();
         });
         /*完了処理*/
-        li.addEventListener("touchend", function() {
+        li.addEventListener("touchstart", function() {
             li.classList.toggle("line")
             saveDate();
         });
