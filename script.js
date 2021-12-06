@@ -37,13 +37,13 @@ function output(todo) {
             li.classList.add("line");
         }
         /*todoの削除*/
-        li.addEventListener("contextmenu", function(event) {
+        li.addEventListener("touchmove", function(event) {
             event.preventDefault();
             li.remove();
             saveDate();
         });
         /*完了処理*/
-        li.addEventListener("click", function() {
+        li.addEventListener("touchend", function() {
             li.classList.toggle("line")
             saveDate();
         });
