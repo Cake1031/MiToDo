@@ -37,7 +37,7 @@ function output(todo) {
             li.classList.add("line");
         }
         /*todoの削除*/
-        li.addEventListener("touchmove", function(event) {
+        li.addEventListener("dblclick", function(event) {
             event.preventDefault();
             li.remove();
             saveDate();
@@ -45,7 +45,7 @@ function output(todo) {
         /*完了処理*/
         li.addEventListener("click", function(event) {
             event.preventDefault();
-            li.classList.toggle("line")
+            li.classList.toggle("line");
             saveDate();
         });
         ul.appendChild(li);
